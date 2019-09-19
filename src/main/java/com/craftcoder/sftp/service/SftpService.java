@@ -126,7 +126,7 @@ public class SftpService {
      * @throws IOException
      */
     public void uploadFiles(List<MultipartFile> files) throws IOException {
-        uploadFiles(files, true);
+        uploadFiles(files, false);
     }
 
     /**

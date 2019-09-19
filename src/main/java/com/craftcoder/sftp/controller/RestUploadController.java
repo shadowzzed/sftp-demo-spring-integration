@@ -70,7 +70,7 @@ public class RestUploadController {
 
     @RequestMapping(value = "/api/download")
     public ResponseEntity<byte[]> testDownload(@RequestBody FileDownloadVO vo) throws IOException {
-        File file = sftpService.downloadFile("/root/chai/sftp-file/" + vo.getFileName(), "D:/temp/" + vo.getFileName() + ".dl");
+        File file = sftpService.downloadFile("/root/chai/sftp-file/" + vo.getFileName(), "D:/tmp/" + vo.getFileName() + ".dl");
         HttpHeaders headers = new HttpHeaders();
         headers.setContentDispositionFormData("attachment", vo.getFileName());
         headers.setContentType(MediaType.APPLICATION_OCTET_STREAM);
