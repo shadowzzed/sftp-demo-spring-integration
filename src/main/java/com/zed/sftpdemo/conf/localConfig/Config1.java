@@ -1,4 +1,4 @@
-package com.zed.sftpdemo.localConfig;
+package com.zed.sftpdemo.conf.localConfig;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.integration.core.GenericSelector;
